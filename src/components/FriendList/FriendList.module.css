@@ -1,6 +1,5 @@
 .friendList {
   list-style: none;
-  display: inline-flex;
-  flex-direction: column;
-  margin: 0 auto;
+  display: block;
+  padding: 0;
 }

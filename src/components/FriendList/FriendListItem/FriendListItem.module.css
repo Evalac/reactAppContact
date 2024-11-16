@@ -1,6 +1,8 @@
 .item {
+  width: 200px;
+  height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
   margin-bottom: 10px;
@@ -9,7 +11,7 @@
 }
 
 .status {
-  padding: 4px 8px;
+  padding: 8px 8px;
   border-radius: 50%;
   color: white;
 }
