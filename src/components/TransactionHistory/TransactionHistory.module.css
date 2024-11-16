@@ -1,0 +1,23 @@
+/* Загальний стиль таблиці */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+/* Заголовок таблиці */
+.theadRow {
+  background-color: #4caf50;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Осередки заголовка */
+.headerCell {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}

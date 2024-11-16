@@ -1,0 +1,20 @@
+/* Рядки тіла таблиці */
+.bodyRow {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Осередки тіла таблиці */
+.bodyCell {
+  padding: 10px 15px;
+}
+
+/* Чергування кольорів для рядків */
+.evenRow {
+  background-color: #f9f9f9;
+}
+
+/* Ховер ефект для рядків */
+.hoverRow:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
