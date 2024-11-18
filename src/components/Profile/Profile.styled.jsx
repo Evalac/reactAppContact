@@ -45,3 +45,18 @@ export const Stats = styled.ul`
   display: flex;
   justify-content: space-between;
 `;
+
+export const ListElement = styled.li`
+  text-align: center;
+`;
+
+export const FolowersTitle = styled.span`
+  display: block;
+  font-size: 14px;
+  color: #777;
+`;
+export const FolowersQuantyty = styled.span`
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+`;

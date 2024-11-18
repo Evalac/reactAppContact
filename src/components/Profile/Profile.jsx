@@ -1,4 +1,3 @@
-import css from './Profile.module.css';
 import PropTypes from 'prop-types';
 
 import { Profiles } from './Profile.styled';
@@ -7,6 +6,9 @@ import { ProfileAvatar } from './Profile.styled';
 import { UserName } from './Profile.styled';
 import { TagLocation } from './Profile.styled';
 import { Stats } from './Profile.styled';
+import { ListElement } from './Profile.styled';
+import { FolowersTitle } from './Profile.styled';
+import { FolowersQuantyty } from './Profile.styled';
 
 function Profile({
   username,
@@ -25,18 +27,18 @@ function Profile({
       </ProfileDescription>
 
       <Stats>
-        <li>
-          <span className={css.label}>Followers: </span>
-          <span className={css.quantity}>{followers}</span>
-        </li>
-        <li>
-          <span className={css.label}>Views: </span>
-          <span className={css.quantity}>{views}</span>
-        </li>
-        <li>
-          <span className={css.label}>Likes: </span>
-          <span className={css.quantity}>{likes}</span>
-        </li>
+        <ListElement>
+          <FolowersTitle>Followers: </FolowersTitle>
+          <FolowersQuantyty>{followers}</FolowersQuantyty>
+        </ListElement>
+        <ListElement>
+          <FolowersTitle>Views: </FolowersTitle>
+          <FolowersQuantyty>{views}</FolowersQuantyty>
+        </ListElement>
+        <ListElement>
+          <FolowersTitle>Likes: </FolowersTitle>
+          <FolowersQuantyty>{likes}</FolowersQuantyty>
+        </ListElement>
       </Stats>
     </Profiles>
   );
