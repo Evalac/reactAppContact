@@ -38,65 +38,10 @@ export const TagLocation = styled.p`
   margin: 0;
 `;
 
-// .profile {
-//   width: 300px;
-//   padding: 20px;
-//   background-color: #f9f9f9;
-//   border-radius: 10px;
-//   margin: 0 auto;
-//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-//   text-align: center;
-//   font-family: Arial, sans-serif;
-//   margin-bottom: 20px;
-// }
-
-// .description {
-//   margin-bottom: 20px;
-// }
-
-// .avatar {
-//   width: 100px;
-//   height: 100px;
-//   border-radius: 50%;
-//   object-fit: cover;
-//   margin-bottom: 15px;
-//   border: 2px solid #ddd;
-// }
-
-// .name {
-//   font-size: 20px;
-//   font-weight: bold;
-//   color: #333;
-//   margin-bottom: 5px;
-// }
-
-// .tag,
-// .location {
-//   font-size: 14px;
-//   color: #777;
-//   margin: 0;
-// }
-
-// .stats {
-//   list-style: none;
-//   padding: 0;
-//   margin: 20px 0 0 0;
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .stats li {
-//   text-align: center;
-// }
-
-// .label {
-//   display: block;
-//   font-size: 14px;
-//   color: #777;
-// }
-
-// .quantity {
-//   font-size: 18px;
-//   font-weight: bold;
-//   color: #333;
-// }
+export const Stats = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+`;

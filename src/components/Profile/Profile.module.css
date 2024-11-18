@@ -1,13 +1,5 @@
 @import-normalize;
 
-.stats {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0 0;
-  display: flex;
-  justify-content: space-between;
-}
-
 .stats li {
   text-align: center;
 }
