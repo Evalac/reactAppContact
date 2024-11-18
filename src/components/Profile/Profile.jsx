@@ -1,6 +1,12 @@
 import css from './Profile.module.css';
 import PropTypes from 'prop-types';
 
+import { Profiles } from './Profile.styled';
+import { ProfileDescription } from './Profile.styled';
+import { ProfileAvatar } from './Profile.styled';
+import { UserName } from './Profile.styled';
+import { TagLocation } from './Profile.styled';
+
 function Profile({
   username,
   tag,
@@ -9,13 +15,13 @@ function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className={css.profile}>
-      <div className={css.description}>
-        <img src={avatar} alt="User avatar" className={css.avatar} />
-        <p className={css.name}>{username}</p>
-        <p className={css.tag}>{tag}</p>
-        <p className={css.location}>{location}</p>
-      </div>
+    <Profiles>
+      <ProfileDescription>
+        <ProfileAvatar src={avatar} alt="User avatar" />
+        <UserName>{username}</UserName>
+        <TagLocation>{tag}</TagLocation>
+        <TagLocation>{location}</TagLocation>
+      </ProfileDescription>
 
       <ul className={css.stats}>
         <li>
@@ -31,7 +37,7 @@ function Profile({
           <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
-    </div>
+    </Profiles>
   );
 }
 
