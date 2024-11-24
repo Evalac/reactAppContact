@@ -24,7 +24,7 @@ export const App = () => {
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
       <Container />
-      <Counter />
+      <Counter initialValue={10} />
     </>
   );
 };
