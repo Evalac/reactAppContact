@@ -9,6 +9,19 @@ import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import { Container } from './App.styled';
 
 import { Counter } from 'components/Counter/Counter';
+import { Dropdown } from 'components/Dropdown/Dropdown';
+import { ColorPicker } from 'components/ColorPicker/ColorPicker';
+
+const colorOptions = [
+  { label: 'red', color: '#f44336' },
+  { label: 'blue', color: '#2196f3' },
+  { label: 'green', color: '#4caf50' },
+  { label: 'yellow', color: '#ffeb3b' },
+  { label: 'orange', color: '#ff9800' },
+  { label: 'purple', color: '#9c27b0' },
+  { label: 'pink', color: '#e91e63' },
+  { label: 'teal', color: '#009688' },
+];
 
 export const App = () => {
   return (
@@ -25,6 +38,8 @@ export const App = () => {
       <TransactionHistory items={transactions} />
       <Container />
       <Counter initialValue={10} />
+      <Dropdown />
+      <ColorPicker options={colorOptions} />
     </>
   );
 };
