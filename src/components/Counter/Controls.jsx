@@ -1,8 +1,9 @@
 import React from 'react';
+import css from './Counter.module.css';
 
 function Controls({ onIncrement, onDecrement }) {
   return (
-    <div className="counterControl">
+    <div className={css.counterControl}>
       <button type="button" onClick={onIncrement}>
         Збільшити на 1
       </button>
