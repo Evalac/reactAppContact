@@ -1,3 +1,5 @@
+import { Component } from 'react';
+
 import users from '../../user.json';
 import data from '../../data.json';
 import friends from '../../friends.json';
@@ -9,8 +11,9 @@ import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import { Container } from './App.styled';
 
 import { Counter } from '../Counter';
-import { Dropdown } from 'components/Dropdown/Dropdown';
+import { Dropdown } from '../Dropdown';
 import { ColorPicker } from 'components/ColorPicker/ColorPicker';
+import { TodoList } from '../TodoList';
 
 const colorOptions = [
   { label: 'red', color: '#f44336' },
@@ -23,23 +26,27 @@ const colorOptions = [
   { label: 'teal', color: '#009688' },
 ];
 
-export const App = () => {
-  return (
-    <>
-      <Profile
-        username={users.username}
-        tag={users.tag}
-        location={users.location}
-        avatar={users.avatar}
-        stats={users.stats}
-      />
-      <Statistic title={`Upload stats`} stats={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
-      <Container />
-      <Counter initialValue={10} />
-      <Dropdown />
-      <ColorPicker options={colorOptions} />
-    </>
-  );
-};
+export class App extends Component {
+  state = {};
+  render() {
+    return (
+      <>
+        <Profile
+          username={users.username}
+          tag={users.tag}
+          location={users.location}
+          avatar={users.avatar}
+          stats={users.stats}
+        />
+        <Statistic title={`Upload stats`} stats={data} />
+        <FriendList friends={friends} />
+        <TransactionHistory items={transactions} />
+        <Container />
+        <Counter initialValue={10} />
+        <Dropdown />
+        <ColorPicker options={colorOptions} />
+        <TodoList />
+      </>
+    );
+  }
+}
