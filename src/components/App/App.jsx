@@ -8,7 +8,7 @@ import { FriendList } from '../FriendList/FriendList';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import { Container } from './App.styled';
 
-import { Counter } from 'components/Counter/Counter';
+import { Counter } from '../Counter';
 import { Dropdown } from 'components/Dropdown/Dropdown';
 import { ColorPicker } from 'components/ColorPicker/ColorPicker';
 

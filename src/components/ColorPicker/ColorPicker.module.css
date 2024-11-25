@@ -47,8 +47,8 @@
   border-color: #333;
 }
 
-.ColorPicker__option:active {
-  transform: scale(0.95);
+.ColorPicker__option__active {
+  transform: scale(0.5);
 }
 .ColorPicker__container {
   display: flex;
