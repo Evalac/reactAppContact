@@ -13,7 +13,9 @@ import { Container } from './App.styled';
 import { Counter } from '../Counter';
 import { Dropdown } from '../Dropdown';
 import { ColorPicker } from 'components/ColorPicker/ColorPicker';
+
 import { TodoList } from '../TodoList';
+import initialTodos from '../../todos.json';
 
 const colorOptions = [
   { label: 'red', color: '#f44336' },
@@ -27,8 +29,17 @@ const colorOptions = [
 ];
 
 export class App extends Component {
-  state = {};
+  state = {
+    todos: initialTodos,
+  };
+
+  deleteTodo = todoId => {
+    this.setState(prevState => ({
+      todos: prevState.todos.filter(todo => todo.id !== todoId),
+    }));
+  };
   render() {
+    const { todos } = this.state;
     return (
       <>
         <Profile
@@ -45,7 +56,7 @@ export class App extends Component {
         <Counter initialValue={10} />
         <Dropdown />
         <ColorPicker options={colorOptions} />
-        <TodoList />
+        <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
       </>
     );
   }
