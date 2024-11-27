@@ -14,7 +14,7 @@ import { Counter } from '../Counter';
 import { Dropdown } from '../Dropdown';
 import { ColorPicker } from 'components/ColorPicker/ColorPicker';
 
-import { SignUpForm } from 'components/Form/Form';
+import { Form } from 'components/Form/Form';
 
 const colorOptions = [
   { label: 'red', color: '#f44336' },
@@ -45,6 +45,7 @@ export class App extends Component {
         <Counter initialValue={10} />
         <Dropdown />
         <ColorPicker options={colorOptions} /> */}
+        <Form />
       </>
     );
   }
