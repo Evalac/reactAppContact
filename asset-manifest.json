@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/reactAppContact/static/css/main.dd5d84f2.css",
-    "main.js": "/reactAppContact/static/js/main.d8dee447.js",
+    "main.css": "/reactAppContact/static/css/main.fab2093d.css",
+    "main.js": "/reactAppContact/static/js/main.e21128e3.js",
     "index.html": "/reactAppContact/index.html",
-    "main.dd5d84f2.css.map": "/reactAppContact/static/css/main.dd5d84f2.css.map",
-    "main.d8dee447.js.map": "/reactAppContact/static/js/main.d8dee447.js.map"
+    "main.fab2093d.css.map": "/reactAppContact/static/css/main.fab2093d.css.map",
+    "main.e21128e3.js.map": "/reactAppContact/static/js/main.e21128e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd5d84f2.css",
-    "static/js/main.d8dee447.js"
+    "static/css/main.fab2093d.css",
+    "static/js/main.e21128e3.js"
   ]
 }
