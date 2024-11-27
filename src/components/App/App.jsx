@@ -14,6 +14,8 @@ import { Counter } from '../Counter';
 import { Dropdown } from '../Dropdown';
 import { ColorPicker } from 'components/ColorPicker/ColorPicker';
 
+import { SignUpForm } from 'components/Form/Form';
+
 const colorOptions = [
   { label: 'red', color: '#f44336' },
   { label: 'blue', color: '#2196f3' },
@@ -29,7 +31,7 @@ export class App extends Component {
   render() {
     return (
       <>
-        <Profile
+        {/* <Profile
           username={users.username}
           tag={users.tag}
           location={users.location}
@@ -42,7 +44,7 @@ export class App extends Component {
         <Container />
         <Counter initialValue={10} />
         <Dropdown />
-        <ColorPicker options={colorOptions} />
+        <ColorPicker options={colorOptions} /> */}
       </>
     );
   }
