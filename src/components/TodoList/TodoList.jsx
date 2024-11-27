@@ -2,8 +2,6 @@ import React from 'react';
 import css from './TodoList.module.css';
 
 function TodoList({ todos, onDeleteTodo }) {
-  console.log(todos);
-
   return (
     <ul className={css.TodoList}>
       {todos.map(({ text, id, completed }, index) => (

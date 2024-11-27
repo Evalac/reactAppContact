@@ -40,6 +40,13 @@ export class App extends Component {
   };
   render() {
     const { todos } = this.state;
+
+    const allTodos = todos.length;
+    const toDoComleted = todos.reduce(
+      (total, todo) => (todo.completed ? total + 1 : total),
+      0
+    );
+
     return (
       <>
         <Profile
@@ -56,6 +63,10 @@ export class App extends Component {
         <Counter initialValue={10} />
         <Dropdown />
         <ColorPicker options={colorOptions} />
+        <div>
+          <p>Кількість ToDo: {allTodos}</p>
+          <p>Кількість виконаних ToDo: {toDoComleted}</p>
+        </div>
         <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
       </>
     );
