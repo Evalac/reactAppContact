@@ -2,7 +2,7 @@ import { React, Component } from 'react';
 
 class Form extends Component {
   state = {
-    inputValue: '',
+    inputValue: '1',
   };
 
   handleInputChange = e => {
