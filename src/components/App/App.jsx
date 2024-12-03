@@ -28,6 +28,14 @@ const colorOptions = [
 ];
 
 export class App extends Component {
+  state = {
+    todos: '',
+  };
+
+  formSubmitHandler = data => {
+    console.log(data);
+  };
+
   render() {
     return (
       <>
@@ -45,7 +53,7 @@ export class App extends Component {
         <Counter initialValue={10} />
         <Dropdown />
         <ColorPicker options={colorOptions} /> */}
-        <Form />
+        <Form onDataSubmit={this.formSubmitHandler} />
       </>
     );
   }
