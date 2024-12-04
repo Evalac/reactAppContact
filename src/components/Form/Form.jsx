@@ -5,11 +5,17 @@ class Form extends Component {
     name: '',
     nickName: '',
     experience: 'middle',
+    licence: false,
   };
 
   handleChange = e => {
     const { name, value } = e.currentTarget;
     this.setState({ [name]: value });
+  };
+
+  handleCheked = e => {
+    console.log(e.currentTarget.checked);
+    this.setState({ licence: e.currentTarget.checked });
   };
 
   onSubmit = e => {
@@ -74,9 +80,22 @@ class Form extends Component {
           />
           Senior
         </label>
+        <br />
+        <label>
+          Згоден з умовою{' '}
+          <input
+            type="checkbox"
+            name="licence"
+            value="false"
+            onChange={this.handleCheked}
+            checked={this.state.licence}
+          />
+        </label>
 
         <br />
-        <button type="submit">Send</button>
+        <button type="submit" disabled={!this.state.licence}>
+          Send
+        </button>
       </form>
     );
   }
